@@ -23,5 +23,22 @@ Spyder
 - rename.py：处理training_data，将标签加入到样本数据名中，并把样本数据放在同一个文件夹下；
 - processTest项目（借鉴wordcount的思想）：处理fulldata.txt，将属于同一股票的新闻标题连在一起；
 2. 计算tf-idf：
-- calculateIDF项目（借鉴invertedindex和wordcount思想）：计算chi_words.txt中各词的idf值，使用公式如下：
-![公式1]()
+- calculateIDF项目（借鉴invertedindex和wordcount思想）：计算chi_words.txt中各词的idf值;
+- calculateTFIDF项目：计算训练集各文件和测试集各项各词语的tf-idf;
+3. 向量化：
+- processData项目：将训练集和测试集的tf-idf向量化;
+4. 分类：
+- classKNN项目：用KNN对测试集进行分类;
+- naiveBayes项目：用朴素贝叶斯对测试集进行分类;
+5. 评估：
+- indexArouse.py：生成股票代码文件，供下载数据使用;
+- test.py：评估分类效果并可视化;
+
+### 仓库介绍
+- code文件夹下，是实验步骤中所有项目的源代码和可执行文件
+- output文件夹下，是实验的所有中间结果和最终运行结果
+- word文档，是实验报告
+
+**各项目的输入格式以及代码运行各步骤的情况可参考实验报告中的描述**
+
+**文件目录存在不符 需要自行修改**
